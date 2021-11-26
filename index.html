@@ -69,6 +69,9 @@
       border: 1px solid grey;
 
     }
+    a{
+      text-decoration: none;
+    }
 
     .myprofile {
       font-family: 'Nunito', sans-serif;
@@ -115,6 +118,54 @@
     top: 50%;
     right: 0 !important;
 }
+.googl{
+  border: 10px solid #ebebeb;
+  margin-bottom: 16px;
+  box-shadow: 1px 0px 2px 1px rgb(170, 169, 169);
+}
+
+.tesla{
+  border: 10px solid #ebebeb;
+  margin-bottom: 16px;
+  margin-right: 8px;
+  box-shadow: 1px 0px 2px 1px rgb(170, 169, 169);
+}
+
+.bike{
+  border: 10px solid #ebebeb;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  box-shadow: 1px 0px 2px 1px rgb(170, 169, 169);
+}
+
+
+.myrow{
+  display: flex;
+}
+
+.col1{
+  width: 50%;
+}
+.col2{
+  width: 50%;
+}
+
+.myrow2{
+  display: flex;
+}
+
+.col3{
+  width: 25%;
+  margin-right: 15px;
+}
+.col4{
+  width: 35%;
+  margin-right: 25px;
+}
+.col5{
+  width: 40%;
+}
+
     @media only screen and (max-width: 600px) {
       .topbuttons {
         float: right;
@@ -143,6 +194,25 @@
         right: 0 !important;
         z-index: 1;
 }
+.googl{
+  border: 10px solid #ebebeb;
+  margin-bottom: 16px;
+  box-shadow: 1px 0px 2px 2px rgb(255, 255, 255);
+}
+
+.tesla{
+  border: 10px solid #ebebeb;
+  margin-bottom: 16px;
+  margin-right: 8px;
+  box-shadow: 1px 0px 2px 2px rgb(255, 255, 255);
+}
+
+.bike{
+  border: 10px solid #ebebeb;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  box-shadow: 1px 0px 2px 2px rgb(255, 253, 253);
+}
     }
   </style>
 </head>
@@ -156,8 +226,9 @@
       <h1> <img src="logo.jpg"> AbduRashid</h1><span class="topbuttons"><a href="#myworks"><button type="button"
             class="btn btn-default">&nbsp;Works&nbsp;</button></a>&nbsp;<a href="#myexp"><button type="button"
             class="btn btn-default">&nbsp;Experience&nbsp;</button></a>&nbsp; <a href="#myappre"><button type="button"
-            class="btn btn-default">&nbsp;Appreciations&nbsp;</button></a> <a href="#mycontact"><button type="button"
-              class="btn btn-default">&nbsp;Cuntact&nbsp;</button></a>  </span>
+            class="btn btn-default">&nbsp;Appreciation&nbsp;</button></a> <a href="#mycontact"><a href="#goals"><button type="button"
+              class="btn btn-default">&nbsp;Goals&nbsp;</button></a><button type="button"
+              class="btn btn-default">&nbsp;Contact&nbsp;</button></a>  </span>
       <div class="my_margn">hi</div>
       <hr>
       <span class="menu">Inspiration <span style="color:#E9E7E7">&nbsp;|</span> Tips <span
@@ -833,8 +904,32 @@
     </div>
     <!-- modal ends here -->
 
-    <div class="text-center">
-      <h1 id="mycontact" style="font-size: 40px; " >Contact Us</h1>
+<!-- Goals Start here -->
+<hr>
+<h3 id="goals">My Goals</h3>
+<hr>
+  <img class="img-responsive googl" src="google.jpg">
+<div class="myrow">
+    <div class="col1"><img src="tesla.jpg" class="img-responsive tesla"></div>
+    <div class="col2"><img src="bike.jpg" class="img-responsive bike"></div>
+</div>
+
+<div class="myrow2">
+  <div class="col3"><img src="burj.jpg" class="img-responsive tesla"></div>
+  <div class="col4"><img src="denmark.jpg" class="img-responsive bike"></div>
+  <div class="col5"><img src="ship.jpg" class="img-responsive bike"></div>
+</div>
+
+
+
+<!-- Goals ends here -->
+
+
+
+    <div class="text-left">
+      <hr>
+      <h3 id="mycontact" >Contact Us</h3>
+      <hr>
     </div>
     <br>
     <form action="javascript:sendmail()" method="post">
@@ -865,7 +960,17 @@
         <br>
         <div class="field">
           <button style="float: right;" type="submit" class="btn btn-default">Send Message</button> 
-          <span style="float: right; background-color: black; border-radius: 50px; padding: 5px; margin-right: 8px;"><a href="tel:91 944 644 7841"><i class='fas fa-phone' style='font-size:18px; color:white'></i></a> </span>
+          <span style="float: right; background-color: black; border-radius: 50px; padding: 5px; margin-right: 8px;">
+            <a href="tel:91 944 644 7841">
+              &nbsp; <i class='fas fa-phone' style='font-size:18px; color:white'></i>&nbsp;&nbsp;&nbsp;
+            </a> 
+            <a  target="_blank" href="https://www.facebook.com/rashid.abdul.web.engineer">
+              <i class="fab fa-facebook"  style='font-size:18px; color:white'></i>&nbsp;&nbsp;&nbsp;
+            </a>
+            <a  target="_blank" href="https://www.linkedin.com/in/abdul-rasheed-557661158/">
+              <i class="fab fa-linkedin"  style='font-size:18px; color:white'></i>&nbsp;&nbsp;&nbsp;
+            </a>
+           </span>
         </div>
 
       </div>  
