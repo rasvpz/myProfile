@@ -956,7 +956,7 @@
     </div>
 
       <div class="col-sm-12 col-sm-12 col-lg-6 col-md-6">
-        <textarea rows="6" name="Message" class="form-control" id="Message" placeholder="Message" required></textarea>
+        <textarea onblur="messageValidation()" rows="6" name="Message" class="form-control" id="Message" placeholder="Message" required></textarea>
         <br>
         <div class="field">
           <button style="float: right;" type="submit" class="btn btn-default">Send Message</button> 
@@ -1075,6 +1075,18 @@ return false;
 }
 }
 
+  </script>
+
+  <script>
+    function messageValidation(){
+    let m = document.forms["myform"]["Message"].value;
+    m = m.trim();
+    if (m.length == 0) {
+      document.getElementById("nValid").innerHTML="Message is Mondatory";
+      document.getElementById("Message").value="";
+
+    }
+  }
   </script>
 
 
