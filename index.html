@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Ubuntu:ital,wght@1,300;1,500&display=swap');
@@ -53,9 +54,7 @@
 
     }
 
-    .section2 {}
-
-    .btn-default {
+     .btn-default {
       border-radius: 20px !important;
       font-family: 'Nunito', sans-serif;
       background-color: black;
@@ -156,14 +155,28 @@
 
 .col3{
   width: 25%;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .col4{
-  width: 35%;
-  margin-right: 25px;
+  width: 40%;
+  margin-right: 20px;
 }
 .col5{
-  width: 40%;
+  width: 35%;
+  margin-right: 9px;
+}
+.modal-header .close {
+    margin-top: -32px !important;
+}
+.btn-dark{
+  background-color: black;
+  color:white;
+}
+.englnd{
+  height: 408px;
+}
+.paris{
+  height: 408px;
 }
 
     @media only screen and (max-width: 600px) {
@@ -212,6 +225,12 @@
   margin-bottom: 16px;
   margin-left: 8px;
   box-shadow: 1px 0px 2px 2px rgb(255, 253, 253);
+}
+.englnd{
+  height: auto;
+}
+.paris{
+  height: auto;
 }
     }
   </style>
@@ -262,10 +281,54 @@
           multiple levels of creative vision-integration, and an unprecedented
           repertoire of other unique skills stands as testimony to the exceptional
           legendary expertise of AbduRashid, who has explored and
-          mastered the world of creativity since many years&nbsp;&nbsp;&nbsp; <img src="more.jpg">
+          mastered the world of creativity since many years&nbsp;&nbsp;&nbsp; <a href="#" data-toggle="modal" data-target="#profileModal"><img src="more.jpg"></a>
 
         </p>
       </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="profileModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 style="font-size: 2em !important;" class="modal-title">About Me</h1>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Art, designing, directing , creative and software engineering/programming skills to design
+          web templates,
+          multiple levels of creative vision-integration, and an unprecedented
+          repertoire of other unique skills stands as testimony to the exceptional
+          legendary expertise of AbduRashid, who has explored and
+          mastered the world of creativity since many years.
+         <hr> <h1 style="font-size: 1.5em !important;">Resposibilities</h1><hr>
+          <p>My role is responsible for designing, coding and modifying websites, from layout to function and according to a client’s specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation.
+            <ul>
+              <li>Regular exposure to business stakeholders and executive management, as well as the authority and scope to apply my expertise to many interesting technical problems.</li>
+              <li>I  have a strong understanding of UI, cross-browser compatibility, general web functions and standards.</li>
+              <li>Im very keen to communicate with my colleagues to share the innovative ideas.</li>
+              <li>I have the Experience in planning and delivering software platforms used across multiple products and organizational units.</li>
+              <li>Iam very deep expertise and hands on experience with Web Applications and programming languages such as HTML, CSS, JavaScript, JQuery, Bootstrap, Mysql, Php, AngularJs, MongoDb, NodeJs, ReactJs and API’s.</li>
+              <li>Strong grasp of security principles and how they apply to E-Commerce applications.</li>
+            </ul>
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
       <div class="col-sm-8">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -918,8 +981,8 @@
 
 <div class="myrow2">
   <div class="col3"><img src="burj.jpg" class="img-responsive tesla"></div>
-  <div class="col4"><img src="denmark.jpg" class="img-responsive bike"></div>
-  <div class="col5"><img src="ship.jpg" class="img-responsive bike"></div>
+  <div class="col4"><img src="denmark.jpg" class="img-responsive bike englnd"></div>
+  <div class="col5"><img src="ship.jpg" class="img-responsive bike paris"></div>
 </div>
 
 
